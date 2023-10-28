@@ -77,6 +77,7 @@
   margin: 16px 0;
   display: flex;
   gap: 12px;
+  position: relative;
 }
 
 .chartbox {
@@ -184,4 +185,18 @@
   margin: 0 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.cardboxbutton {
+  position: absolute;
+  right: -40px;
+  top: 30%;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  background-image: url(/lanseyou.svg);
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  box-shadow: -1px 0px 4px 0px rgba(77, 125, 254, 0.12);
 }

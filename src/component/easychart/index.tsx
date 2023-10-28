@@ -22,6 +22,26 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
   const legendData = ['本店', '同行同层优秀', '同行同层平均']
   const options = {
     toolbar: { trigger: 'axis', },
+    tooltip: {
+      textStyle: {
+        color: 'white',
+        fontSize: 10,
+      },
+      backgroundColor: '#171818',
+      show: true,
+      trigger: 'axis',
+      axisPointer: {
+        type: 'line',
+        snap: true,
+        lineStyle: {
+
+        },
+        label: {
+          color: 'white',
+          backgroundColor: 'black'
+        }
+      }
+    },
     backgroundColor: 'white',
     color: ['#5A86FF', '#5CCFFE', '#FE8C45'],
     legend: {

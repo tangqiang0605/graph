@@ -169,6 +169,7 @@ export default function Box() {
       </div>
       <div className={style.cardbox}>
         {tags.map((tag, index) => { return (<Card {...cardData.get(tag)} key={tag} title={tag} month={month} isActive={index == 0}></Card>) })}
+        <div className={style.cardboxbutton}></div>
       </div>
       <div className={style.chartbox}>
         <EasyChart month={month} {...chartdata}></EasyChart>
