@@ -85,5 +85,6 @@ button:focus-visible {
 
 @font-face {
   font-family: DIN;
-  src: url(/DIN.otf);
+  src: url(/newDin.otf)
+    /* src: url(/DIN.otf); */
 }

@@ -37,6 +37,7 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
 
         },
         label: {
+          margin: -10,
           color: 'white',
           backgroundColor: 'black'
         }

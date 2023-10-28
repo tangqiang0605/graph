@@ -28,18 +28,8 @@
   font-size: 11px;
   font-family: STSongti-SC-Regular, STSongti-SC;
   /* font-weight: 400; */
-  color: #444444;
+  color: #555;
   line-height: 16px;
-  /* letter-spacing: 1px; */
-
-
-  /* width: 45px;
-    height: 16px;
-    font-size: 11px;
-    font-family: STSongti-SC-Regular, STSongti-SC;
-    font-weight: 400;
-    color: #444444;
-    line-height: 16px; */
 }
 
 .titlelogo {
@@ -56,7 +46,7 @@
   width: 92px;
   height: 18px;
   font-size: 15px;
-  font-family: DIN-Medium, DIN;
+  font-family: DIN;
   font-weight: 500;
   color: #222222;
   line-height: 18px;
@@ -91,6 +81,16 @@
 }
 
 .bottomboxtext {
+  /* width: 58px; */
+  height: 13px;
+  font-size: 9px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #788498;
+  line-height: 13px;
+}
+
+.bottomboxtext1 {
   /* width: 58px; */
   height: 13px;
   font-size: 9px;
