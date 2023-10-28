@@ -1,9 +1,6 @@
 import Card from '../card'
 import style from './box.module.css'
 import EasyChart from '../easychart'
-// import Selector from '../selector'
-import huise from '/huise.svg'
-import heise from '/heise.svg'
 import { useState } from 'react'
 
 const getFullMonth = (month: number) => month < 10 ? '0' + month : month;
