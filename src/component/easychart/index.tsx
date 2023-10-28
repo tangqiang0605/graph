@@ -243,6 +243,6 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
     };
   }, [cDom, options]);
   return <>
-    <div ref={cDom} style={{ height: '100%', width: '100%' }}></div>
+    <div ref={cDom} style={{ height: '100%', width: '100%', transition: 'all 1s' }}></div>
   </>
 }

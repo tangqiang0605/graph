@@ -150,7 +150,7 @@ export default function Box() {
                   getNewData('push')
                 }
                 // month + 1 <= 12 ? setMonth(month + 1) : -1;
-              }}></div> : <img className={style.rightarrowdisabled} src={huise}></img>}
+              }}></div> : <div className={style.rightarrowdisabled}></div>}
 
             </div>
           </div>

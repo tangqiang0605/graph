@@ -137,20 +137,15 @@
 }
 
 .rightarrowdisabled {
-  /* height: 8px; */
-  /* width: 5px; */
   height: 100%;
-  padding: 7px;
+  padding: 8px;
   flex: 1;
-  /* background: url(/heise.svg) no-repeat 50% 50%; */
+  background: url(/huise.svg) no-repeat 50% 50%;
 
-  /* transform: rotate(180deg); */
 }
 
 .rightarrow:hover {
   background: url(/lanseyou.svg) no-repeat 50% 50%;
-  /* filter: drop-shadow(blue 100px 0); */
-  /* transform: rotate(180deg) translateX(100px); */
 }
 
 .topbutton {
