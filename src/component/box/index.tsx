@@ -138,7 +138,7 @@ export default function Box() {
             <div className={style.selectoritem}>周</div>
             <div className={style.selectoritemactive}>月</div>
             <div className={style.arrowbox}>
-              <img className={style.leftarrow} src='/arrow.svg' onClick={() => {
+              <div className={style.leftarrow} onClick={() => {
                 // console.log(month)
                 if (month > 1) {
                   setMonth(month - 1)
@@ -146,14 +146,15 @@ export default function Box() {
 
                 }
               }
-              }></img>
-              <img className={style.rightarrow} src={month < 9 ? heise : huise} onClick={() => {
+              }></div>
+              {month < 9 ? <div className={style.rightarrow} onClick={() => {
                 if (month < 12) {
                   setMonth(month + 1)
                   getNewData('push')
                 }
                 // month + 1 <= 12 ? setMonth(month + 1) : -1;
-              }}></img>
+              }}></div> : <img className={style.rightarrowdisabled} src={huise}></img>}
+
             </div>
           </div>
 

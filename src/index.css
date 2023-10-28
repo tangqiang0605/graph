@@ -82,3 +82,8 @@ button:focus-visible {
   font-family: STSongti-SC;
   src: url(/SIMSUN.TTC);
 }
+
+@font-face {
+  font-family: DIN;
+  src: url(/DIN.otf);
+}

@@ -7,9 +7,9 @@ function currentMonth(year: number, month: number) {
   const result = []
   for (let i = 0; i < 12; i++) {
     if (month - i < 1) {
-      result.push(`${year - 1}-${getFullMonth(month + 12 - i)}`)
+      result.push(`${i == 11 ? '              ' : ''}${year - 1}-${getFullMonth(month + 12 - i)}${i == 0 ? '              ' : ''}`)
     } else {
-      result.push(`${year}-${getFullMonth(month - i)}`)
+      result.push(`${i == 11 ? '              ' : ''}${year}-${getFullMonth(month - i)}${i == 0 ? '              ' : ''}`)
     }
   }
   return result.reverse();
@@ -31,7 +31,11 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
       itemStyle: {
         borderCap: 'round'
       },
-      borderRadius: 4,
+      lineStyle: {
+        join: "round"
+      },
+      borderRadius: 5,
+      itemGap: 26,
       // itemGap:"26px",
       itemWidth: 4,
       itemHeight: 9,
@@ -42,10 +46,10 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
       data: legendData
     },
     grid: {
-      left: '0%',
-      right: '3%',
+      left: '-2.5%',
+      right: '0%',
       bottom: 0,
-      top: 50,
+      top: 40,
       containLabel: true,
     },
     xAxis: [
@@ -54,22 +58,27 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
         data: xAxisData,
         boundaryGap: false,
         axisTick: {
-          show: true, // 不显示坐标轴刻度线
+          show: false, // 不显示坐标轴刻度线
         },
         splitLine: {
           show: false,
         },
         axisLine: {
           lineStyle: {
-            type: 'dashed',
-            dashOffset: 4
+            type: [5, 5],
+            dashOffset: 10,
+            color: '#F1F5FB',
+            shadowColor: 'white'
           },
           show: true,
+        },
+        nameTextStyle: {
+          fontSize: 12,
         },
         axisLabel: {
           align: 'center',
           color: '#ADB4C1',
-          fontSize: 12,
+          fontSize: 9,
         },
       },
     ],
@@ -81,10 +90,21 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
         // offset: -10,
         // zlayer: 2,
         axisLine: {
-          // onZero: true,
+          onZero: false,
+
+        },
+        minorTick: {
+          type: [5, 10],
+          dashOffset: 10,
         },
         // alignTicks:
         splitNumber: 4,
+        splitLine: {
+          lineStyle: {
+            type: [5, 5],
+            dashOffset: 10,
+          }
+        },
         type: 'value',
         minInterval: 1500000,
         //y右侧文字
@@ -95,7 +115,7 @@ export default function EasyChart({ myscore, superscore, avgscore, month }: any)
           margin: -1,
           align: 'left',
           color: '#ADB4C1',
-          fontSize: 12,
+          fontSize: 9,
           formatter: function (value: number) {
             return value ? (value / 10000).toFixed(2) + '万' : 0;
           },
