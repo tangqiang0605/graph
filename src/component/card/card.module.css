@@ -1,0 +1,101 @@
+.cardactive {
+  width: 150px;
+  height: 130px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #5980FE;
+  padding: 16px 10px;
+}
+
+.cardnormal {
+  width: 150px;
+  height: 130px;
+  padding: 16px 10px;
+  background: #F9FBFF;
+  border-radius: 6px;
+}
+
+.titlebox {
+  padding-left: 7px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.title {
+  display: inline-block;
+  /* width: 45px; */
+  height: 16px;
+  font-size: 11px;
+  font-family: STSongti-SC-Regular, STSongti-SC;
+  /* font-weight: 400; */
+  color: #444444;
+  line-height: 16px;
+  /* letter-spacing: 1px; */
+
+
+  /* width: 45px;
+    height: 16px;
+    font-size: 11px;
+    font-family: STSongti-SC-Regular, STSongti-SC;
+    font-weight: 400;
+    color: #444444;
+    line-height: 16px; */
+}
+
+.titlelogo {
+  /* float: left; */
+  background: url(/tip.png);
+  height: 10px;
+  width: 10px;
+  margin: 3px;
+}
+
+.myscore {
+  /* display: block; */
+  margin: 7px;
+  width: 92px;
+  height: 18px;
+  font-size: 15px;
+  font-family: DIN-Medium, DIN;
+  font-weight: 500;
+  color: #222222;
+  line-height: 18px;
+}
+
+.bottombox {
+  width: 129px;
+  height: 48px;
+  background: #F2F7FF;
+  border-radius: 3px;
+  position: relative;
+}
+
+.bottombox::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 116px;
+  height: 1px;
+  background: #E1ECFC;
+}
+
+.bottomtextbox {
+  padding: 0 7px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* align-items: ; */
+}
+
+.bottomboxtext {
+  /* width: 58px; */
+  height: 13px;
+  font-size: 9px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #788498;
+  line-height: 13px;
+}

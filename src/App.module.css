@@ -1,0 +1,12 @@
+.bg {
+  width: 1512px;
+  height: 945px;
+  /* background-image: url(/bg.png); */
+  background: url(/bg.png);
+  /* object-fit: contain; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 173px 15px;
+
+}

@@ -1,0 +1,20 @@
+.selector {
+  width: 161px;
+  height: 22px;
+  background: #F1F6FE;
+  border-radius: 11px;
+}
+
+.selectoritem {
+  width: 45px;
+  height: 22px;
+  /* background: #E0E9FF; */
+  border-radius: 11px;
+}
+
+.selectoritemactive {
+  width: 45px;
+  height: 22px;
+  background: #E0E9FF;
+  border-radius: 11px;
+}
